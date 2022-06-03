@@ -1,7 +1,7 @@
 from typing import List
 from fastapi import FastAPI, Depends, Response, status, HTTPException
 
-from blog.routes import authentication
+from blog_api.routes import authentication
 from . import schemas, models
 from .database import engine, get_db
 from sqlalchemy.orm import Session
